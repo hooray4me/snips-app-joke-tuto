@@ -53,7 +53,7 @@ class JokeTuto(object):
         new_people =  self.config.get("secret").get("protagonist")
         if new_people is not None and new_people is not "":
             joke_msg = joke_msg.replace('Chuck Norris', new_people)
-
+        print("test print in code.")
         hermes.publish_end_session(intent_message.session_id, joke_msg)
 
     # More callback function goes here...
